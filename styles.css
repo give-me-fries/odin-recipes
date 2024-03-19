@@ -1,6 +1,7 @@
 * {
   font-size: 24px;
   font-family: "Helvetica", sans-serif;
+  box-sizing: border-box;
 }
 
 h1, h2 {
@@ -11,4 +12,41 @@ h1, h2 {
 img {
   width: 500px;
   height: auto;
+}
+
+#recipes-title {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+#recipes {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+#recipes li,
+#recipes li a:visited {
+  margin: 50px 100px;
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 5px 5px black;
+}
+
+/* TODO: Fix repeating backgrounds, center content */
+
+#ribeye {
+  background-image: url("./recipes/italianribeye.png");
+}
+
+#lasagna {
+  background-image: url("./recipes/lasagna.png");
+  background-position: -75px -250px;
+}
+
+#orangechicken {
+  background-image: url("./recipes/orangechicken.png");
+  background-position: 25px -150px;
 }
