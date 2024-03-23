@@ -12,6 +12,8 @@ h1, h2 {
 img {
   width: 500px;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #recipes-title {
@@ -28,25 +30,30 @@ img {
 
 #recipes li,
 #recipes li a:visited {
-  margin: 50px 100px;
+  margin: 50px auto;
   padding: 50px;
+  max-width: 650px;
   color: white;
   font-weight: bold;
   text-shadow: 0px 5px 5px black;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: auto auto;
 }
 
 /* TODO: Fix repeating backgrounds, center content */
 
 #ribeye {
   background-image: url("./recipes/italianribeye.png");
+  background-position-y: -300px;
 }
 
 #lasagna {
   background-image: url("./recipes/lasagna.png");
-  background-position: -75px -250px;
+  background-position-y: -250px;
 }
 
 #orangechicken {
   background-image: url("./recipes/orangechicken.png");
-  background-position: 25px -150px;
+  background-position-y: -150px;
 }
